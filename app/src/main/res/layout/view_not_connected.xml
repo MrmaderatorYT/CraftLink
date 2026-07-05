@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oneui_background"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/spacing_xxl">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_servers"
+            android:alpha="0.3"
+            android:layout_marginBottom="@dimen/spacing_lg" />
+
+        <TextView
+            android:id="@+id/tv_not_connected_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Connected"
+            android:textColor="@color/oneui_text_primary"
+            android:textSize="@dimen/text_size_headline"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/spacing_sm" />
+
+        <TextView
+            android:id="@+id/tv_not_connected_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect to a server first to use this feature"
+            android:textColor="@color/oneui_text_secondary"
+            android:textSize="@dimen/text_size_body"
+            android:gravity="center" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_go_to_servers"
+            style="@style/Widget.CraftLink.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:text="Go to Servers"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</FrameLayout>

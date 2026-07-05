@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oneui_background">
+
+    <ScrollView
+        android:id="@+id/inventory_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inventory"
+            android:textColor="@color/oneui_text_primary"
+            android:textSize="@dimen/text_size_headline"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/spacing_md" />
+
+        <!-- Status Bar -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.CraftLink.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="@dimen/spacing_md">
+
+                <View
+                    android:id="@+id/view_hp_indicator"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/bg_status_online" />
+
+                <TextView
+                    android:id="@+id/tv_hp_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/spacing_sm"
+                    android:text="HP: 20/20"
+                    android:textColor="@color/oneui_text_primary"
+                    android:textSize="@dimen/text_size_body" />
+
+                <View
+                    android:id="@+id/view_hunger_indicator"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/bg_status_online" />
+
+                <TextView
+                    android:id="@+id/tv_hunger_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_sm"
+                    android:text="Food: 20/20"
+                    android:textColor="@color/oneui_text_primary"
+                    android:textSize="@dimen/text_size_body" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Armor & Offhand Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Armor"
+                    android:textColor="@color/oneui_text_secondary"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvArmor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offhand"
+                    android:textColor="@color/oneui_text_secondary"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="4dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvOffhand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Inventory"
+            android:textColor="@color/oneui_text_secondary"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:layout_marginBottom="4dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotbar (Tap to select, Long Press to drop)"
+            android:textColor="@color/oneui_text_secondary"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:layout_marginBottom="4dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHotbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_oneui"
+            android:padding="4dp" />
+
+        <!-- Add padding at the bottom for Bottom Navigation -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xxxl" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/view_not_connected"
+        layout="@layout/view_not_connected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+</FrameLayout>

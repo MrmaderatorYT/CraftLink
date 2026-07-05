@@ -1,0 +1,26 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.SharedPreferences;
+import org.json.JSONObject;
+
+/* loaded from: classes.dex */
+final class i extends d<String> {
+    i(int i, String str, String str2) {
+        super(i, str, str2, null);
+    }
+
+    @Override // com.google.android.gms.internal.ads.d
+    public final /* synthetic */ void a(SharedPreferences.Editor editor, String str) {
+        editor.putString(a(), str);
+    }
+
+    @Override // com.google.android.gms.internal.ads.d
+    public final /* synthetic */ String a(JSONObject jSONObject) {
+        return jSONObject.optString(a(), b());
+    }
+
+    @Override // com.google.android.gms.internal.ads.d
+    public final /* synthetic */ String a(SharedPreferences sharedPreferences) {
+        return sharedPreferences.getString(a(), b());
+    }
+}

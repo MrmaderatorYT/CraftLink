@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="In App Purchases">
+        <Preference
+            android:title="Premium features"
+            android:key="chatcraft_pro_features"
+            android:summary="@string/settings_premium_features"/>
+        <Preference
+            android:title="Remove ads from your screen"
+            android:key="no_ads"
+            android:summary="@string/settings_no_ads"/>
+        <Preference
+            android:title="All in one"
+            android:key="all_in_one"
+            android:summary="@string/settings_all_in_one"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Chat Settings">
+        <EditTextPreference
+            android:title="On connect commands or messages"
+            android:key="commands"
+            android:summary="@string/settings_on_connect_commands"
+            android:dialogTitle="Commands"/>
+        <CheckBoxPreference
+            android:title="@string/auto_teleport_name"
+            android:key="auto_teleport"
+            android:summary="@string/tp_safe_place_description"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:title="Auto Login"
+            android:key="auto_login"
+            android:summary="@string/auto_login_description"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:title="Download Skins"
+            android:key="skin_download"
+            android:summary="@string/download_skin_description"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:title="Save Logs"
+            android:key="save_logs"
+            android:summary="@string/settings_save_logs"/>
+    </PreferenceCategory>
+</PreferenceScreen>

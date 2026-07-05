@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Surface Colors -->
+    <color name="oneui_surface">#FF1A1D28</color>
+    <color name="oneui_surface_variant">#FF252836</color>
+    <color name="oneui_surface_card">#FF1A1D28</color>
+    <color name="oneui_background">#FF12141C</color>
+
+    <!-- Text Colors -->
+    <color name="oneui_text_primary">#FFFFFFFF</color>
+    <color name="oneui_text_secondary">#FFB0B5C0</color>
+    <color name="oneui_text_hint">#FF6B6F7A</color>
+
+    <!-- Dividers & Outlines -->
+    <color name="oneui_divider">#FF3A3D4A</color>
+    <color name="oneui_outline">#FF3A3D4A</color>
+
+    <!-- Navigation -->
+    <color name="oneui_nav_unselected">#FF6B6F7A</color>
+</resources>

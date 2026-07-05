@@ -1,0 +1,41 @@
+package com.github.steveice10.mc.v1_9_4.protocol.packet.ingame.server.entity.player;
+
+import com.github.steveice10.mc.v1_9_4.protocol.util.ReflectionToString;
+import com.github.steveice10.packetlib.io.NetInput;
+import com.github.steveice10.packetlib.io.NetOutput;
+import com.github.steveice10.packetlib.packet.Packet;
+
+/* loaded from: classes.dex */
+public class ServerPlayerChangeHeldItemPacket implements Packet {
+    private int slot;
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public boolean isPriority() {
+        return false;
+    }
+
+    private ServerPlayerChangeHeldItemPacket() {
+    }
+
+    public ServerPlayerChangeHeldItemPacket(int i) {
+        this.slot = i;
+    }
+
+    public int getSlot() {
+        return this.slot;
+    }
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public void read(NetInput netInput) {
+        this.slot = netInput.readByte();
+    }
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public void write(NetOutput netOutput) {
+        netOutput.writeByte(this.slot);
+    }
+
+    public String toString() {
+        return ReflectionToString.toString(this);
+    }
+}

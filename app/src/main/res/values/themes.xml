@@ -1,0 +1,169 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.CraftLink" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/oneui_primary</item>
+        <item name="colorPrimaryVariant">@color/oneui_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/oneui_secondary</item>
+        <item name="colorSecondaryVariant">@color/oneui_secondary_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/oneui_background</item>
+        <item name="colorSurface">@color/oneui_surface</item>
+        <item name="colorSurfaceVariant">@color/oneui_surface_variant</item>
+        <item name="colorOnSurface">@color/oneui_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/oneui_text_secondary</item>
+
+        <item name="colorError">@color/oneui_error</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="android:statusBarColor">@color/oneui_surface</item>
+        <item name="android:navigationBarColor">@color/oneui_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.CraftLink.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.CraftLink.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.CraftLink.Large</item>
+
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.CraftLink.MaterialAlertDialog</item>
+        <item name="bottomNavigationStyle">@style/Widget.CraftLink.BottomNavigation</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.CraftLink.BottomSheet</item>
+        <item name="dialogTheme">@style/ThemeOverlay.CraftLink.MaterialAlertDialog</item>
+    </style>
+
+    <style name="Theme.CraftLink" parent="Base.Theme.CraftLink" />
+
+    <!-- OneUI Shape Appearances - Rounded Corners -->
+    <style name="ShapeAppearance.CraftLink.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.CraftLink.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.CraftLink.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <!-- MaterialAlertDialogBuilder with 20dp corner radius -->
+    <style name="ThemeOverlay.CraftLink.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/oneui_surface_card</item>
+        <item name="colorOnSurface">@color/oneui_text_primary</item>
+        <item name="colorPrimary">@color/oneui_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="shapeAppearanceSmallComponent">@style/DialogShape.CraftLink</item>
+        <item name="shapeAppearanceMediumComponent">@style/DialogShape.CraftLink</item>
+        <item name="shapeAppearanceLargeComponent">@style/DialogShape.CraftLink</item>
+    </style>
+
+    <style name="DialogShape.CraftLink" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <!-- OneUI BottomNavigationView -->
+    <style name="Widget.CraftLink.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/oneui_surface_card</item>
+        <item name="itemIconTint">@color/bottom_nav_color_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_color_selector</item>
+        <item name="elevation">8dp</item>
+        <item name="itemRippleColor">@color/oneui_primary_variant</item>
+    </style>
+
+    <!-- OneUI BottomSheet -->
+    <style name="ThemeOverlay.CraftLink.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.CraftLink.BottomSheet</item>
+    </style>
+
+    <style name="Widget.CraftLink.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="shapeAppearance">@style/ShapeAppearance.CraftLink.Large</item>
+        <item name="backgroundTint">@color/oneui_surface_card</item>
+    </style>
+
+    <!-- OneUI Card View -->
+    <style name="Widget.CraftLink.CardView" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/oneui_surface_card</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- OneUI Button -->
+    <style name="Widget.CraftLink.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">@color/oneui_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.CraftLink.Button.Outline" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">@color/oneui_primary</item>
+        <item name="android:textColor">@color/oneui_primary</item>
+    </style>
+
+    <style name="Widget.CraftLink.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textColor">@color/oneui_primary</item>
+    </style>
+
+    <!-- OneUI TextInputLayout -->
+    <style name="Widget.CraftLink.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/oneui_outline</item>
+        <item name="hintTextColor">@color/oneui_primary</item>
+        <item name="android:textColorHint">@color/oneui_text_hint</item>
+    </style>
+
+    <!-- OneUI Toolbar -->
+    <style name="Widget.CraftLink.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/oneui_text_primary</item>
+        <item name="subtitleTextColor">@color/oneui_text_secondary</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- OneUI Chip -->
+    <style name="Widget.CraftLink.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">10dp</item>
+        <item name="chipBackgroundColor">@color/oneui_surface_variant</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+
+    <!-- OneUI TabLayout -->
+    <style name="Widget.CraftLink.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="tabIndicatorColor">@color/oneui_primary</item>
+        <item name="tabSelectedTextColor">@color/oneui_primary</item>
+        <item name="tabTextColor">@color/oneui_text_secondary</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabRippleColor">@color/oneui_primary_variant</item>
+    </style>
+
+    <!-- OneUI FAB -->
+    <style name="Widget.CraftLink.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/oneui_primary</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <!-- OneUI Snackbar -->
+    <style name="Widget.CraftLink.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="backgroundTint">@color/oneui_text_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- OneUI Switch -->
+    <style name="Widget.CraftLink.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/oneui_primary</item>
+        <item name="trackTint">@color/oneui_surface_variant</item>
+    </style>
+</resources>

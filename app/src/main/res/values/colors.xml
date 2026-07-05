@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- OneUI Primary Palette - Soft Blue/Purple -->
+    <color name="oneui_primary">#FF3D7BF7</color>
+    <color name="oneui_primary_light">#FF6BA3FF</color>
+    <color name="oneui_primary_dark">#FF1A5ADB</color>
+    <color name="oneui_primary_variant">#FFD6E4FF</color>
+
+    <color name="oneui_secondary">#FF7C5CFC</color>
+    <color name="oneui_secondary_light">#FFA78BFF</color>
+    <color name="oneui_secondary_dark">#FF5A35E0</color>
+    <color name="oneui_secondary_variant">#FFE8DEFF</color>
+
+    <!-- OneUI Surface Colors -->
+    <color name="oneui_surface">#FFF8FAFE</color>
+    <color name="oneui_surface_variant">#FFE8EDF5</color>
+    <color name="oneui_surface_card">#FFFFFFFF</color>
+    <color name="oneui_background">#FFF0F3FA</color>
+
+    <!-- OneUI Dark Surface Colors -->
+    <color name="oneui_surface_dark">#FF1A1D28</color>
+    <color name="oneui_surface_variant_dark">#FF252836</color>
+    <color name="oneui_background_dark">#FF12141C</color>
+
+    <!-- OneUI Text Colors -->
+    <color name="oneui_text_primary">#FF1B1B1F</color>
+    <color name="oneui_text_secondary">#FF6B6F7A</color>
+    <color name="oneui_text_hint">#FF9DA1AB</color>
+    <color name="oneui_text_primary_dark">#FFFFFFFF</color>
+    <color name="oneui_text_secondary_dark">#FFB0B5C0</color>
+
+    <!-- OneUI Accent / Status Colors -->
+    <color name="oneui_success">#FF34C759</color>
+    <color name="oneui_warning">#FFFF9F0A</color>
+    <color name="oneui_error">#FFFF3B30</color>
+    <color name="oneui_info">#FF5AC8FA</color>
+
+    <!-- OneUI Dividers & Outlines -->
+    <color name="oneui_divider">#FFE0E4EB</color>
+    <color name="oneui_divider_dark">#FF3A3D4A</color>
+    <color name="oneui_outline">#FFD0D4DC</color>
+
+    <!-- Minecraft Chat Colors -->
+    <color name="mc_white">#FFFFFFFF</color>
+    <color name="mc_yellow">#FFFFAA00</color>
+    <color name="mc_red">#FFFF5555</color>
+    <color name="mc_green">#FF55FF55</color>
+    <color name="mc_aqua">#FF55FFFF</color>
+    <color name="mc_light_purple">#FFFF55FF</color>
+    <color name="mc_blue">#FF5555FF</color>
+    <color name="mc_gray">#FFAAAAAA</color>
+    <color name="mc_dark_gray">#FF555555</color>
+    <color name="mc_dark_red">#FFAA0000</color>
+    <color name="mc_dark_green">#FF00AA00</color>
+    <color name="mc_dark_aqua">#FF00AAAA</color>
+    <color name="mc_dark_purple">#FFAA00AA</color>
+    <color name="mc_dark_blue">#FF0000AA</color>
+    <color name="mc_black">#FF000000</color>
+
+    <!-- Bottom Navigation -->
+    <color name="oneui_nav_selected">#FF3D7BF7</color>
+    <color name="oneui_nav_unselected">#FFB0B5C0</color>
+</resources>

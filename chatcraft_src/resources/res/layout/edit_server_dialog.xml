@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:windowSoftInputMode="adjustResize">
+    <EditText
+        android:id="@+id/serverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="Insert server name"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/serverAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="Insert address"
+        android:ems="10"
+        android:layout_below="@+id/serverName"
+        android:layout_alignLeft="@+id/serverName"
+        android:inputType="textNoSuggestions"/>
+    <Spinner
+        android:id="@+id/serverVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/serverAddress"
+        android:layout_alignLeft="@+id/serverAddress"
+        android:layout_alignRight="@+id/serverAddress"
+        android:spinnerMode="dropdown"/>
+</RelativeLayout>

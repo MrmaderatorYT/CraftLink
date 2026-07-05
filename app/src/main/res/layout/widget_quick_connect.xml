@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_card_oneui"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_lg"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CraftLink"
+        android:textColor="@color/oneui_primary"
+        android:textSize="@dimen/text_size_subtitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_widget_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:text="No server selected"
+        android:textColor="@color/oneui_text_secondary"
+        android:textSize="@dimen/text_size_body_small"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_widget_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btn_widget_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height_small"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:background="@drawable/bg_button_primary"
+        android:textColor="@color/white"
+        android:text="@string/connect"
+        android:textAllCaps="false" />
+
+</LinearLayout>

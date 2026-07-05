@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">CraftLink</string>
+    <string name="version_label">Version %1$s</string>
+
+    <!-- Navigation -->
+    <string name="nav_servers">Servers</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_inventory">Inventory</string>
+    <string name="nav_movement">Movement</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Server -->
+    <string name="add_server">Add Server</string>
+    <string name="edit_server">Edit Server</string>
+    <string name="delete_server">Delete Server</string>
+    <string name="server_name">Server Name</string>
+    <string name="server_address">Server Address</string>
+    <string name="server_port">Port</string>
+    <string name="server_version">Version</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connecting">Connecting…</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="server_type">Server Type</string>
+    <string name="server_type_vanilla">Vanilla</string>
+    <string name="server_type_forge">Forge</string>
+    <string name="server_type_bukkit">Bukkit</string>
+    <string name="server_type_spigot">Spigot</string>
+    <string name="server_type_sponge">Sponge</string>
+
+    <!-- Chat -->
+    <string name="type_message">Type a message…</string>
+    <string name="send">Send</string>
+    <string name="chat_history">Chat History</string>
+    <string name="command_hint">/</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="auto_login">Auto Login</string>
+    <string name="change_nickname">Change Nickname</string>
+    <string name="save_credentials">Save Credentials</string>
+
+    <!-- AFK -->
+    <string name="afk_mode">AFK Mode</string>
+    <string name="afk_enabled">AFK Enabled</string>
+    <string name="afk_disabled">AFK Disabled</string>
+    <string name="afk_auto_reconnect">Auto Reconnect</string>
+    <string name="afk_interval">Reconnect Interval</string>
+    <string name="afk_movement">Anti-AFK Movement</string>
+    <string name="afk_timer">AFK Timer</string>
+
+    <!-- Inventory -->
+    <string name="inventory">Inventory</string>
+    <string name="teleport_to">Teleport to</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="theme">Theme</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="all_features_free">All Pro Features Free</string>
+    <string name="widget_description">Quick connect to your Minecraft servers</string>
+
+    <!-- Dialog -->
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+
+    <!-- AFK Notification -->
+    <string name="afk_notification_title">CraftLink AFK</string>
+    <string name="afk_notification_text">Anti-AFK is active. Reconnecting in %1$d seconds.</string>
+    <string name="reconnect_notification_title">CraftLink Reconnect</string>
+    <string name="reconnect_notification_text">Reconnecting to %1$s…</string>
+</resources>

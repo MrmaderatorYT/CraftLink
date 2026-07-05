@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.CraftLink" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/oneui_primary</item>
+        <item name="colorPrimaryVariant">@color/oneui_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/oneui_secondary</item>
+        <item name="colorSecondaryVariant">@color/oneui_secondary_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/oneui_background_dark</item>
+        <item name="colorSurface">@color/oneui_surface_dark</item>
+        <item name="colorSurfaceVariant">@color/oneui_surface_variant_dark</item>
+        <item name="colorOnSurface">@color/oneui_text_primary_dark</item>
+        <item name="colorOnSurfaceVariant">@color/oneui_text_secondary_dark</item>
+
+        <item name="colorError">@color/oneui_error</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="android:statusBarColor">@color/oneui_surface_dark</item>
+        <item name="android:navigationBarColor">@color/oneui_surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.CraftLink.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.CraftLink.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.CraftLink.Large</item>
+
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.CraftLink.MaterialAlertDialog.Dark</item>
+        <item name="bottomNavigationStyle">@style/Widget.CraftLink.BottomNavigation.Dark</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.CraftLink.BottomSheet.Dark</item>
+        <item name="dialogTheme">@style/ThemeOverlay.CraftLink.MaterialAlertDialog.Dark</item>
+    </style>
+
+    <style name="ThemeOverlay.CraftLink.MaterialAlertDialog.Dark" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/oneui_surface_variant_dark</item>
+        <item name="colorOnSurface">@color/oneui_text_primary_dark</item>
+        <item name="colorPrimary">@color/oneui_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="shapeAppearanceSmallComponent">@style/DialogShape.CraftLink</item>
+        <item name="shapeAppearanceMediumComponent">@style/DialogShape.CraftLink</item>
+        <item name="shapeAppearanceLargeComponent">@style/DialogShape.CraftLink</item>
+    </style>
+
+    <style name="Widget.CraftLink.BottomNavigation.Dark" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/oneui_surface_dark</item>
+        <item name="itemIconTint">@color/bottom_nav_color_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_color_selector</item>
+        <item name="elevation">8dp</item>
+        <item name="itemRippleColor">@color/oneui_surface_variant_dark</item>
+    </style>
+
+    <style name="ThemeOverlay.CraftLink.BottomSheet.Dark" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.CraftLink.BottomSheet.Dark</item>
+    </style>
+
+    <style name="Widget.CraftLink.BottomSheet.Dark" parent="Widget.Material3.BottomSheet">
+        <item name="shapeAppearance">@style/ShapeAppearance.CraftLink.Large</item>
+        <item name="backgroundTint">@color/oneui_surface_variant_dark</item>
+    </style>
+</resources>

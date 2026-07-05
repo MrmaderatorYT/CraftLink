@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- OneUI Spacing Scale -->
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+    <dimen name="spacing_xxl">24dp</dimen>
+    <dimen name="spacing_xxxl">32dp</dimen>
+    <dimen name="spacing_xxxxl">40dp</dimen>
+    <dimen name="spacing_xxxxxl">48dp</dimen>
+
+    <!-- OneUI Corner Radii -->
+    <dimen name="corner_radius_sm">8dp</dimen>
+    <dimen name="corner_radius_md">12dp</dimen>
+    <dimen name="corner_radius_lg">16dp</dimen>
+    <dimen name="corner_radius_xl">20dp</dimen>
+    <dimen name="corner_radius_xxl">24dp</dimen>
+
+    <!-- OneUI Elevation -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
+    <dimen name="elevation_xl">12dp</dimen>
+
+    <!-- OneUI Typography Sizes -->
+    <dimen name="text_size_caption">11sp</dimen>
+    <dimen name="text_size_body_small">12sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_body_large">15sp</dimen>
+    <dimen name="text_size_subtitle">16sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_headline">20sp</dimen>
+    <dimen name="text_size_display">24sp</dimen>
+
+    <!-- Component Sizes -->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_height_small">36dp</dimen>
+    <dimen name="icon_size_sm">16dp</dimen>
+    <dimen name="icon_size_md">24dp</dimen>
+    <dimen name="icon_size_lg">32dp</dimen>
+    <dimen name="icon_size_xl">48dp</dimen>
+
+    <!-- Chat Bubble -->
+    <dimen name="chat_bubble_radius">16dp</dimen>
+    <dimen name="chat_bubble_padding">12dp</dimen>
+    <dimen name="chat_input_height">48dp</dimen>
+
+    <!-- Server Card -->
+    <dimen name="server_card_radius">16dp</dimen>
+    <dimen name="server_card_padding">16dp</dimen>
+
+    <!-- Dialog -->
+    <dimen name="dialog_corner_radius">20dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+
+    <!-- Bottom Navigation -->
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="bottom_nav_icon_size">24dp</dimen>
+
+    <!-- Mini Map -->
+    <dimen name="minimap_size">120dp</dimen>
+    <dimen name="minimap_corner_radius">12dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+package com.github.steveice10.mc.v1_7_7.protocol.packet.ingame.server.entity;
+
+import com.github.steveice10.packetlib.io.NetInput;
+import com.github.steveice10.packetlib.io.NetOutput;
+import com.github.steveice10.packetlib.packet.Packet;
+
+/* loaded from: classes.dex */
+public class ServerCollectItemPacket implements Packet {
+    private int collectedEntityId;
+    private int collectorEntityId;
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public boolean isPriority() {
+        return false;
+    }
+
+    private ServerCollectItemPacket() {
+    }
+
+    public ServerCollectItemPacket(int i, int i2) {
+        this.collectedEntityId = i;
+        this.collectorEntityId = i2;
+    }
+
+    public int getCollectedEntityId() {
+        return this.collectedEntityId;
+    }
+
+    public int getCollectorEntityId() {
+        return this.collectorEntityId;
+    }
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public void read(NetInput netInput) {
+        this.collectedEntityId = netInput.readInt();
+        this.collectorEntityId = netInput.readInt();
+    }
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public void write(NetOutput netOutput) {
+        netOutput.writeInt(this.collectedEntityId);
+        netOutput.writeInt(this.collectorEntityId);
+    }
+}

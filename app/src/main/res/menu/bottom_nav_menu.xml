@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_servers"
+        android:icon="@drawable/ic_servers_selector"
+        android:title="@string/nav_servers" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_chat_selector"
+        android:title="@string/nav_chat" />
+    <item
+        android:id="@+id/nav_inventory"
+        android:icon="@drawable/ic_inventory_selector"
+        android:title="@string/nav_inventory" />
+    <item
+        android:id="@+id/nav_movement"
+        android:icon="@drawable/ic_movement_selector" 
+        android:title="@string/nav_movement" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings_selector"
+        android:title="@string/nav_settings" />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+    android:textColor="?android:attr/textColorPrimaryInverse"
+    android:gravity="start|center_vertical"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/keyline_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:singleLine="true"
+    android:imeOptions="actionNext">
+    <requestFocus/>
+</EditText>

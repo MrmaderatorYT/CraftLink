@@ -1,0 +1,8 @@
+package com.github.steveice10.mc.v1_9_2.protocol.data.status.handler;
+
+import com.github.steveice10.packetlib.Session;
+
+/* loaded from: classes.dex */
+public interface ServerPingTimeHandler {
+    void handle(Session session, long j);
+}

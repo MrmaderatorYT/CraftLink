@@ -1,0 +1,5 @@
+package com.github.steveice10.mc.v1_9_2.protocol.data.game.world.notify;
+
+/* loaded from: classes.dex */
+public interface ClientNotificationValue {
+}

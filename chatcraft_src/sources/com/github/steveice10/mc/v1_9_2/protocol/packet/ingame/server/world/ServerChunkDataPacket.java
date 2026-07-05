@@ -1,0 +1,47 @@
+package com.github.steveice10.mc.v1_9_2.protocol.packet.ingame.server.world;
+
+import com.github.steveice10.mc.v1_9_2.protocol.data.game.chunk.Column;
+import com.github.steveice10.mc.v1_9_2.protocol.util.NetUtil;
+import com.github.steveice10.packetlib.io.NetInput;
+import com.github.steveice10.packetlib.io.NetOutput;
+import com.github.steveice10.packetlib.io.stream.StreamNetOutput;
+import com.github.steveice10.packetlib.packet.Packet;
+import java.io.ByteArrayOutputStream;
+
+/* loaded from: classes.dex */
+public class ServerChunkDataPacket implements Packet {
+    private Column column;
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public boolean isPriority() {
+        return false;
+    }
+
+    private ServerChunkDataPacket() {
+    }
+
+    public ServerChunkDataPacket(Column column) {
+        this.column = column;
+    }
+
+    public Column getColumn() {
+        return this.column;
+    }
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public void read(NetInput netInput) {
+        this.column = NetUtil.readColumn(netInput.readBytes(netInput.readVarInt()), netInput.readInt(), netInput.readInt(), netInput.readBoolean(), false, netInput.readVarInt());
+    }
+
+    @Override // com.github.steveice10.packetlib.packet.Packet
+    public void write(NetOutput netOutput) {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        int iWriteColumn = NetUtil.writeColumn(new StreamNetOutput(byteArrayOutputStream), this.column, this.column.hasBiomeData(), this.column.hasSkylight());
+        netOutput.writeInt(this.column.getX());
+        netOutput.writeInt(this.column.getZ());
+        netOutput.writeBoolean(this.column.hasBiomeData());
+        netOutput.writeVarInt(iWriteColumn);
+        netOutput.writeVarInt(byteArrayOutputStream.size());
+        netOutput.writeBytes(byteArrayOutputStream.toByteArray(), byteArrayOutputStream.size());
+    }
+}

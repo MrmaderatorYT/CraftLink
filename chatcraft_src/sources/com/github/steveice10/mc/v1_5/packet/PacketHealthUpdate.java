@@ -1,0 +1,50 @@
+package com.github.steveice10.mc.v1_5.packet;
+
+import com.github.steveice10.mc.v1_5.net.Client;
+import com.github.steveice10.mc.v1_5.net.ServerConnection;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+
+/* loaded from: classes.dex */
+public class PacketHealthUpdate extends Packet {
+    public short food;
+    public short health;
+    public float saturation;
+
+    @Override // com.github.steveice10.mc.v1_5.packet.Packet
+    public int getId() {
+        return 8;
+    }
+
+    @Override // com.github.steveice10.mc.v1_5.packet.Packet
+    public void handleClient(Client client) {
+    }
+
+    @Override // com.github.steveice10.mc.v1_5.packet.Packet
+    public void handleServer(ServerConnection serverConnection) {
+    }
+
+    public PacketHealthUpdate() {
+    }
+
+    public PacketHealthUpdate(short s, short s2, float f) {
+        this.health = s;
+        this.food = s2;
+        this.saturation = f;
+    }
+
+    @Override // com.github.steveice10.mc.v1_5.packet.Packet
+    public void read(DataInputStream dataInputStream) {
+        this.health = dataInputStream.readShort();
+        this.food = dataInputStream.readShort();
+        this.saturation = dataInputStream.readFloat();
+    }
+
+    @Override // com.github.steveice10.mc.v1_5.packet.Packet
+    public void write(DataOutputStream dataOutputStream) throws IOException {
+        dataOutputStream.writeShort(this.health);
+        dataOutputStream.writeShort(this.food);
+        dataOutputStream.writeFloat(this.saturation);
+    }
+}

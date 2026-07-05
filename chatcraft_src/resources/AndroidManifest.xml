@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="181"
+    android:versionName="5.1.1"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    package="mattecarra.minecraftchat"
+    platformBuildVersionCode="181"
+    platformBuildVersionName="5.1.1">
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name_ChatCraft"
+        android:icon="@mipmap/ic_launcher"
+        android:name="mattecarra.usavsursschat.ChatCraftApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4499087698213644~2968231019"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <activity
+            android:label="@string/app_name_ChatCraft"
+            android:name="mattecarra.usavsursschat.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AccountManager"
+            android:name="mattecarra.usavsursschat.SingleInputForms.AddAccountForm"/>
+        <activity
+            android:theme="@style/SettingsTheme"
+            android:name="mattecarra.usavsursschat.activities.Settings"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="mattecarra.usavsursschat.activities.ContactUsActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/AccountManager"
+            android:name="mattecarra.usavsursschat.SingleInputForms.AddServerForm"/>
+        <receiver android:name="mattecarra.usavsursschat.BroadcastReceiver.NotificationReceivers">
+            <intent-filter>
+                <action android:name="disconnect"/>
+                <action android:name="remove"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="mattecarra.usavsursschat.ChatCraftActivity"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:label="@string/title_activity_cracked_password_manager"
+            android:name="mattecarra.usavsursschat.activities.CrackedPasswordManagerActivity"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="82170baab0b71c9b4f1d19f4f19aca3342b0f759"/>
+        <activity android:name="mattecarra.usavsursschat.activities.LogPickerActivity"/>
+        <activity android:name="mattecarra.usavsursschat.activities.LogViewerActivity"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:exported="false"
+            android:authorities="mattecarra.minecraftchat.mobileadsinitprovider"
+            android:initOrder="100"/>
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:exported="false"
+            android:authorities="mattecarra.minecraftchat.com.squareup.picasso"/>
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:exported="false"
+            android:authorities="mattecarra.minecraftchat.crashlyticsinitprovider"
+            android:initOrder="90"/>
+        <meta-data
+            android:name="com.android.dynamic.apk.fused.modules"
+            android:value="base"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2"/>
+    </application>
+</manifest>

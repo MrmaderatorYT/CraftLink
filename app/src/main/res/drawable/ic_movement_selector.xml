@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <vector android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="@color/oneui_primary"
+                android:pathData="M21,6H3C1.89,6 1,6.89 1,8v8c0,1.11 0.89,2 2,2h18c1.11,0 2,-0.89 2,-2V8C23,6.89 22.11,6 21,6zM9,13H8v1H6v-1H5v-2h1V10h2v1h1V13zM14.5,15c-0.83,0 -1.5,-0.67 -1.5,-1.5S13.67,12 14.5,12 16,12.67 16,13.5 15.33,15 14.5,15zM18.5,12c-0.83,0 -1.5,-0.67 -1.5,-1.5S17.67,9 18.5,9 20,9.67 20,10.5 19.33,12 18.5,12z" />
+        </vector>
+    </item>
+    <item>
+        <vector android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="@color/oneui_nav_unselected"
+                android:pathData="M21,6H3C1.89,6 1,6.89 1,8v8c0,1.11 0.89,2 2,2h18c1.11,0 2,-0.89 2,-2V8C23,6.89 22.11,6 21,6zM9,13H8v1H6v-1H5v-2h1V10h2v1h1V13zM14.5,15c-0.83,0 -1.5,-0.67 -1.5,-1.5S13.67,12 14.5,12 16,12.67 16,13.5 15.33,15 14.5,15zM18.5,12c-0.83,0 -1.5,-0.67 -1.5,-1.5S17.67,9 18.5,9 20,9.67 20,10.5 19.33,12 18.5,12z" />
+        </vector>
+    </item>
+</selector>
