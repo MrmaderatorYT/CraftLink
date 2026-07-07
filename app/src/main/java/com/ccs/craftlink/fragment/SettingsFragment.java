@@ -105,6 +105,7 @@ public class SettingsFragment extends Fragment {
         setupAutoEatSection();
         setupPowerSaveSection();
         setupVersionInfo();
+        setupCreditsButton();
         observeProfile();
         observeConnection();
     }
@@ -277,6 +278,16 @@ public class SettingsFragment extends Fragment {
         TextView tvVersion = getView() != null ? getView().findViewById(R.id.tv_version) : null;
         if (tvVersion != null) {
             tvVersion.setText(getString(R.string.version_label, BuildConfig.VERSION_NAME));
+        }
+    }
+
+    private void setupCreditsButton() {
+        MaterialButton btnCredits = getView() != null ? getView().findViewById(R.id.btn_credits) : null;
+        if (btnCredits != null) {
+            btnCredits.setOnClickListener(v -> DialogHelper.showInfoDialog(
+                    requireContext(),
+                    getString(R.string.credits),
+                    getString(R.string.credits_message)));
         }
     }
 
